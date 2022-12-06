@@ -37,7 +37,7 @@ export function Header() {
         paddingBottom: paddingY,
         boxShadow: shadow,
       }}
-      className="flex items-center justify-between px-12 sticky top-0 left-0 right-0"
+      className="flex items-center justify-between px-12 fixed top-0 left-0 right-0 bg-white bg-opacity-60 backdrop-blur-md"
     >
       <a href="#">
         <img
