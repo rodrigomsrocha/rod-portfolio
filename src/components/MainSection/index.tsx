@@ -25,7 +25,7 @@ export function MainSection() {
           initial="initial"
           whileHover="onHover"
           className="text-violet-500 inline-block"
-          href="#"
+          href="#about"
         >
           <span>my skills</span>
           <motion.div variants={linkVariation} className="h-px bg-violet-500" />

@@ -1,6 +1,13 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useEffect, useState } from 'react';
 
+const links = [
+  { name: 'Who am i?', href: '#about' },
+  { name: 'Education', href: '#education' },
+  { name: 'Projects', href: '#projects' },
+  { name: 'Contact', href: '#contact' },
+];
+
 const headerVariant = {
   visible: { y: '0%' },
   hidden: { y: '-100%' },
@@ -48,13 +55,13 @@ export function Header() {
       </a>
 
       <nav className="flex items-center gap-6">
-        <ul className="flex text-sm items-center gap-4 font-mono">
-          {['Who am i?', 'Education', 'Projects', 'Contact'].map((item) => (
-            <li className="text-violet-500" key={item}>
-              <a href="#">
+        <ul className="flex text-sm items-center gap-4 font-mono text-gray-600">
+          {links.map((link) => (
+            <li className="text-violet-500" key={link.href}>
+              <a href={link.href}>
                 {'<'}
                 <span className="text-black hover:text-violet-500 transition-all">
-                  {item}
+                  {link.name}
                 </span>
                 {' />'}
               </a>
