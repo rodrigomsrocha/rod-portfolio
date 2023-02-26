@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Title } from '../Title';
 
 const imgVariant = {
   initial: { y: 0, filter: 'grayscale(100%)' },
@@ -9,10 +10,7 @@ export function AboutSection() {
   return (
     <div id="about" className="min-h-screen flex items-center">
       <div className="text-gray-600">
-        <h1 className="text-violet-500 text-4xl font-mono mb-8">
-          {'<'}
-          <span className="text-gray-900">Who am i?</span> {'/>'}
-        </h1>
+        <Title>Who am I?</Title>
         <div className="text-lg flex flex-col gap-3 mb-4">
           <p>
             Hello! my name is Rodrigo Marques, I always liked to create my own
