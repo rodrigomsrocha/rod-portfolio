@@ -1,8 +1,11 @@
 import { useState } from 'react';
 import { Title } from '../Title';
 import { TabLabel } from './TabLabel';
+import { CCAATab } from './Tabs/CCAATab';
+import { OrigamidTab } from './Tabs/OrigamidTab';
+import { RocketseatTab } from './Tabs/RocketseatTab';
 
-const tabs = ['Rocketseat', 'Origamid', 'Cod3r', 'CCAA'];
+const tabs = ['Rocketseat', 'Origamid', 'CCAA'];
 
 export function EducationSection() {
   const [activeTab, setActiveTab] = useState('Rocketseat');
@@ -29,8 +32,14 @@ export function EducationSection() {
             );
           })}
         </ul>
-        <div className="p-2">
-          <h3>React @{activeTab}</h3>
+        <div className="p-2 min-h-[300px]">
+          {activeTab === 'Rocketseat' ? (
+            <RocketseatTab />
+          ) : activeTab === 'Origamid' ? (
+            <OrigamidTab />
+          ) : (
+            activeTab === 'CCAA' && <CCAATab />
+          )}
         </div>
       </div>
     </div>
