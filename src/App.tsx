@@ -2,6 +2,7 @@ import { AboutSection } from './components/AboutSection';
 import { EducationSection } from './components/EducationSetion';
 import { Header } from './components/Header';
 import { MainSection } from './components/MainSection';
+import { ProjectsSection } from './components/ProjectsSection';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <MainSection />
         <AboutSection />
         <EducationSection />
+        <ProjectsSection />
       </div>
     </div>
   );
