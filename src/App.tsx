@@ -1,6 +1,7 @@
 import { AboutSection } from './components/AboutSection';
 import { ContactSection } from './components/ContactSection';
 import { EducationSection } from './components/EducationSetion';
+import { Footer } from './components/Footer';
 import { Header } from './components/Header';
 import { MainSection } from './components/MainSection';
 import { ProjectsSection } from './components/ProjectsSection';
@@ -16,6 +17,7 @@ function App() {
         <ProjectsSection />
         <ContactSection />
       </div>
+      <Footer />
     </div>
   );
 }
