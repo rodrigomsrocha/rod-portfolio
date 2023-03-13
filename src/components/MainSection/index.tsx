@@ -24,11 +24,11 @@ export function MainSection() {
         <motion.a
           initial="initial"
           whileHover="onHover"
-          className="text-violet-500 inline-block"
+          className="text-violet-500 inline-block font-bold"
           href="#about"
         >
           <span>my skills</span>
-          <motion.div variants={linkVariation} className="h-px bg-violet-500" />
+          <motion.div variants={linkVariation} className="h-[2px] bg-violet-500" />
         </motion.a>
         .
       </p>
