@@ -1,3 +1,4 @@
+import { Toaster } from 'react-hot-toast';
 import { AboutSection } from './components/AboutSection';
 import { ContactSection } from './components/ContactSection';
 import { EducationSection } from './components/EducationSetion';
@@ -9,6 +10,7 @@ import { ProjectsSection } from './components/ProjectsSection';
 function App() {
   return (
     <div>
+      <Toaster />
       <Header />
       <div className="max-w-7xl px-32 mx-auto">
         <MainSection />
