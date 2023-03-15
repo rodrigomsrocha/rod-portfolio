@@ -28,7 +28,7 @@ export function ProjectsSection() {
             <GithubLogo weight="regular" size={32} />
           </a>
         </div>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 items-start">
           <span className="text-violet-500 leading-none -mb-3">image hosting</span>
           <h3 className="text-2xl font-bold">UPFI</h3>
           <p className="max-w-md p-4 bg-gray-100 shadow-md shadow-gray-200 rounded-md">
