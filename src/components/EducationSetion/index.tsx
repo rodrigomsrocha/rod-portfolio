@@ -4,11 +4,12 @@ import { TabLabel } from './TabLabel';
 import { CCAATab } from './Tabs/CCAATab';
 import { OrigamidTab } from './Tabs/OrigamidTab';
 import { RocketseatTab } from './Tabs/RocketseatTab';
+import { PUCTab } from './Tabs/PUCTab';
 
-const tabs = ['Rocketseat', 'Origamid', 'CCAA'];
+const tabs = ['PUC Minas', 'Rocketseat', 'Origamid', 'CCAA'];
 
 export function EducationSection() {
-  const [activeTab, setActiveTab] = useState('Rocketseat');
+  const [activeTab, setActiveTab] = useState('PUC Minas');
 
   const handleActiveTabChange = (tab: string) => {
     setActiveTab(tab);
@@ -33,7 +34,9 @@ export function EducationSection() {
           })}
         </ul>
         <div className="p-2 min-h-[300px]">
-          {activeTab === 'Rocketseat' ? (
+          {activeTab === 'PUC Minas' ? (
+            <PUCTab />
+          ) : activeTab === 'Rocketseat' ? (
             <RocketseatTab />
           ) : activeTab === 'Origamid' ? (
             <OrigamidTab />

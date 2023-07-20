@@ -1,35 +1,35 @@
-export function OrigamidTab() {
+export function PUCTab() {
   return (
     <div>
       <h3 className="text-xl">
-        Web development and Web design{' '}
-        <strong className="text-purple-500 font-bold">@Origamid</strong>
+        Computer Science Bachelor{' '}
+        <strong className="text-purple-500 font-bold">@PUC</strong>
       </h3>
-      <span className="text-sm text-gray-700">December 2020 - July 2023</span>
+      <span className="text-sm text-gray-700">August 2023 - Present</span>
       <ul className="mt-6 flex flex-col gap-2">
         <li className="flex items-center gap-2">
           <div className="text-violet-500">{'>'}</div>
-          Basic ui design
+          Database
         </li>
         <li className="flex items-center gap-2">
           <div className="text-violet-500">{'>'}</div>
-          HTML and CSS
+          Graphics processing
         </li>
         <li className="flex items-center gap-2">
           <div className="text-violet-500">{'>'}</div>
-          CSS flexbox and grid
+          Software engineering
         </li>
         <li className="flex items-center gap-2">
           <div className="text-violet-500">{'>'}</div>
-          CSS with SASS
+          Artificial inteligence
         </li>
         <li className="flex items-center gap-2">
           <div className="text-violet-500">{'>'}</div>
-          Javascript ES6
+          Computer network
         </li>
         <li className="flex items-center gap-2">
           <div className="text-violet-500">{'>'}</div>
-          React
+          Information system
         </li>
       </ul>
     </div>
